@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atlas — Offline</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:-apple-system, 'Inter', 'Segoe UI', sans-serif;
+    display:flex; align-items:center; justify-content:center; min-height:100vh; padding:24px;
+    background:
+      radial-gradient(1100px 700px at 12% -8%, rgba(143,214,92,0.16), transparent 60%),
+      radial-gradient(900px 600px at 100% 10%, rgba(111,157,36,0.10), transparent 55%),
+      linear-gradient(180deg, #F7FAF6, #EFF7EC 50%, #E7F4E0);
+    color:#1C2418;
+  }
+  .card{
+    width:min(420px,92vw); text-align:center; padding:44px 34px; border-radius:28px;
+    background: rgba(255,255,255,0.5); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px);
+    border:1px solid rgba(255,255,255,0.55); box-shadow: 0 20px 60px rgba(47,95,103,0.16);
+  }
+  .mark{ width:64px;height:64px;border-radius:18px;margin:0 auto 22px; display:flex;align-items:center;justify-content:center;
+    background: linear-gradient(135deg,#6F9D24,#8FD65C); box-shadow:0 10px 26px rgba(111,157,36,0.35); }
+  .mark svg{ width:30px;height:30px;color:#0F1A0C; }
+  h1{ font-size:22px; font-weight:800; margin-bottom:10px; letter-spacing:-0.02em; }
+  p{ font-size:14.5px; color:#5B6B57; line-height:1.7; margin-bottom:24px; }
+  button{
+    font-family:inherit; font-weight:700; font-size:14.5px; padding:13px 26px; border-radius:14px; border:none; cursor:pointer;
+    background: linear-gradient(135deg,#6F9D24,#8FD65C); color:#0F1A0C; box-shadow:0 10px 28px rgba(111,157,36,0.35);
+  }
+  .hint{ margin-top:18px; font-size:12px; color:#8B9A86; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l22 22M9 9a3 3 0 0 1 4.24 4.24M16.72 11.06a9 9 0 0 1 2.83 6.44M2.05 5.11A16 16 0 0 1 12 3a16 16 0 0 1 10 3.53M5.5 8.5a11 11 0 0 1 5.14-2.4M8.53 16.11a5 5 0 0 1 7.14 0"/></svg></div>
+    <h1>You're offline</h1>
+    <p>Atlas can't reach the network right now. Once you're back online, your dashboard, tasks, and everything else will be right where you left them.</p>
+    <button onclick="location.reload()">Try again</button>
+    <div class="hint">Your data is safe — Atlas stores everything on this device.</div>
+  </div>
+</body>
+</html>

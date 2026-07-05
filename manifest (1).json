@@ -1,0 +1,33 @@
+{
+  "name": "Atlas — Self Management",
+  "short_name": "Atlas",
+  "description": "A modern productivity and self-management platform — tasks, planning, study, goals, habits, health, journal, and expenses in one calm place.",
+  "start_url": "./index.html",
+  "id": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#F7FAF6",
+  "theme_color": "#6F9D24",
+  "categories": ["productivity", "lifestyle", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    { "src": "icons/icon-72.png",  "sizes": "72x72",   "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-96.png",  "sizes": "96x96",   "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-128.png", "sizes": "128x128", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-144.png", "sizes": "144x144", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-152.png", "sizes": "152x152", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Tasks", "short_name": "Tasks", "url": "./index.html?page=tasks", "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }] },
+    { "name": "Study Tracker", "short_name": "Study", "url": "./index.html?page=study", "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }] },
+    { "name": "Journal", "short_name": "Journal", "url": "./index.html?page=journal", "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }] }
+  ]
+}
